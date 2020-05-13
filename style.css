@@ -1,0 +1,28 @@
+.customGrid {
+    display: grid;
+    justify-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .customGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .customGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+} 
+
+@media only screen and (min-width: 768px) {
+    .customGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .customGrid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
